@@ -1,0 +1,16 @@
+.link{
+    color: rgb(0, 153, 255);
+}
+
+.biLinkChevron{
+    width: 10px;
+    height: 10px;
+    fill: rgb(0, 153, 255);
+}
+
+
+.link:hover{
+    span{
+        text-decoration: underline;
+    }
+}

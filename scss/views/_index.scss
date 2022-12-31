@@ -1,0 +1,654 @@
+
+.index__section-promotional1{
+width: 100%;
+min-height: 80vh;
+
+padding-top: 40px;
+@include flexStructureColumn;
+
+.textContainer{
+    width: 100%;
+    height: 30vh;
+
+    @include flexStructureColumn;
+
+        .title{
+            font-size: 50px;
+        }
+
+        .paragraph{
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+
+}
+
+    .link{
+        font-size: 20px;
+        margin-right: 20px;
+    }
+    .imgContainer{
+        width: 100%;
+        height: 60vh;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        background-image: url(../../img/index/iphone14.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+}
+
+.index__section-promotional2{
+    width: 100%;
+    min-height: 80vh;
+
+    background-color:  #0b002b;
+
+        .imgContainer{
+            width: 100%;
+            height: 60vh;
+
+            background-image: url(../../img/index/appleGift.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+
+        .textContainer{
+            width: 100%;
+            height: 30vh;
+            
+            padding-bottom: 20px;
+
+            @include flexStructureColumn;
+
+            text-align: center;
+
+                .title{
+                    font-size: 50px;
+                    font-weight: bold;
+
+                    color: white;
+                }
+
+                .paragraph{
+                    margin-bottom: 20px;
+                    font-size: 30px;
+                    color: white;
+                }
+        }
+
+        .link{
+            font-size: 20px;
+        }
+
+        .break{
+            width: 100%;
+            height: 10px;
+            background-color: white;
+        }
+}
+
+.index__section-promotional3{
+    width: 100%;
+    min-height: 85vh;
+
+    background-color: #0f0f0f;
+
+        .textContainer{
+            width: 100%;
+            height: 35vh;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: center;
+
+                .title{
+                    @include flexStructureRow;
+
+                    font-size: 50px;
+                    font-weight: bold;
+                    color: white;
+
+                        i{
+                            font-size: 40px;
+                        }
+                }
+        
+                .subtitle{
+                    font-size: 20px;
+                    color:red;
+                    letter-spacing: 0.1cm;
+                }
+        
+                .paragraph{
+                    margin-bottom: 20px;
+                    font-size: 30px;
+                    color: white;
+                }
+        }
+
+        .link{
+            font-size: 20px;
+            margin-right: 20px;
+        }
+
+        .imgContainer{
+            width: 100%;
+            height: 50vh;
+
+            background-image: url(../../img/index/appleWatch.png);
+            background-repeat: no-repeat;
+            background-position:bottom ;
+            background-size: 400px 90%;
+        }
+}
+
+
+
+.index__section-promotional4{
+
+
+    article{
+        width: 100%;
+        min-height: auto;
+
+        position: relative;
+
+        .textContainer{
+            width: 100%;
+            height: 30vh;
+
+            @include flexStructureColumn;
+
+                .title{
+                    font-size: 30px;
+                    font-weight: bold;
+                    color: white;
+                    text-align: center;
+                }
+
+                .paragraph{
+                    margin-bottom: 20px;
+
+                    font-size: 20px;
+                    color: white;
+                    text-align: center;
+                }
+        }
+
+        .link{
+            font-size: 20px;
+            margin-right: 20px;
+        }
+
+        .imgContainer{
+            width: 100%;
+            height: 58vh;
+        }
+    }
+
+    .article-1{
+        background-color: #0f0f0f;
+
+        .imgContainer{
+            background-image: url(../../img/index/iPhonePro.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+    }
+
+    .article-2{
+        background-color: white;
+
+            .textContainer{
+                .title, .paragraph{
+                    color: black;
+                }
+            }
+
+            .imgContainer{
+                background-image: url(../../img/index/iPad.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+    }
+
+    .article-3{
+        background-color: white;
+
+            .textContainer{
+                .title, .paragraph{
+                    color: black;
+                }
+
+                .subtitle{
+                    font-size: 12px;
+                    font-weight: bold;
+                    letter-spacing: 0.2mm;
+                    color: rgb(255, 115, 0);
+                }
+            }
+
+            .imgContainer{
+                
+                background-image: url(../../img/index/watchUltra.png);
+                background-repeat: no-repeat;
+                background-position: center;
+        }
+
+    }
+
+    .article-4{
+        background-color: #0f0f0f;
+
+        .imgContainer{
+            
+            background-image: url(../../img/index/airPodsPro.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    .article-5{
+        .textContainer{
+            .title, .paragraph{
+                color: black;
+            }
+
+            .paragraphContainer{    
+                margin-bottom: 20px;
+    
+                @include flexStructureRow;
+                
+                .paragraph{
+                    margin-bottom: 0px;
+                }
+    
+                img{
+                    width: 20px;
+                    height: 20px;
+                    margin-left: 5px;
+                }
+            }
+        }
+
+        .imgContainer{
+            background-image: url(../../img/index/macBookAir.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    .article-6{
+        background-color: white;
+
+        .textContainer{
+            .title, .paragraph{
+                color: black;
+            }
+        }
+
+        .imgContainer{
+            background-image: url(../../img/index/appleCard.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}
+
+// carousel
+.carouselContainer{
+    width: 100%;
+    height: 85vh;
+
+    padding-top: 15px;
+
+    display: flex;
+    flex-direction: column;
+
+    
+    .carousel{
+        width: 100%;
+        height: 93%;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+
+        position: relative;
+
+        .slide-track{
+            width: calc(75vw * 5) + (10 * 5);
+            height: 100%;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+                .slide{
+                    width: 75vw;
+                    height: 100%;
+
+                    margin: 0 5px 0 5px;
+
+                    display: flex;
+                    align-items: flex-end;
+
+                    position: relative;
+
+                    .textContainer{
+                        width: 100%;
+                        height: 100%;
+
+                        padding-bottom: 30px;
+
+                        display: grid;
+                        grid-template-columns: 80% 20%;
+                        grid-template-rows: 50% 50%;
+                        grid-template-areas: 
+                        "appleTV appleTV"
+                        "descriptionContainer descriptionContainer";
+
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+
+                        z-index: 1;
+
+                            .appleTV{
+                                grid-area: appleTV;
+
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                    .bi, p{
+                                        font-size: 30px;
+                                        color: white;
+                                    }
+                            }
+
+                            .descriptionContainer{
+                                grid-area: descriptionContainer;
+                                
+                                justify-self: center;
+                                align-self: flex-end;
+
+                                    .type{
+                                        margin-bottom: 5px;
+                                        font-size: 20px;
+                                        font-weight: bolder;
+                                        color: white;
+                                        text-align: center;
+                                    }
+
+                                    .description{
+                                        margin-bottom: 0px;
+
+                                        font-size: 15px;
+                                        color: white;
+                                        text-align: center;
+
+                                        margin-bottom: 20px;
+                                    }
+
+                                    
+                            .button{
+                                width: 150px;
+                                height: 45px;
+
+                                padding: 0 10px 0 10px;
+
+                                background-color: white;
+                                
+                                display: flex;
+                                justify-content: space-evenly;
+                                align-items: center;
+
+                                border-radius: 30px;
+
+                                cursor: pointer;
+                                    p{
+                                        font-weight: bold;
+                                    }
+                                    .iconContainer{
+                                        width: 15px;
+                                        height: 15px;
+                                        background-color: black;
+
+                                        @include flexStructureRow;
+                                        border-radius: 50%;
+
+                                            svg{
+                                                width: 10px;
+                                                height: 10px;
+                                                fill: white;
+                                            }
+                                    }
+                            }
+
+                            .button:hover{
+                                background-color: rgba(255, 255, 255, 0.9);
+                            }
+                            }
+                    }
+
+                    .shadowEffect{
+                        width: 100%;
+                        height: 100%;
+                        background: linear-gradient(rgba(255, 255, 255, 0) 40%, rgb(0, 0, 0) 100%);
+                    }
+                }
+
+                .slide1{
+                    background-image: url(../../img/index/carousel/img1.jpg);
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                .slide2{
+                    background-image: url(../../img/index/carousel/img2.jpg);
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                .slide3{
+                    background-image: url(../../img/index/carousel/img3.jpg);
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                .slide4{
+                    background-image: url(../../img/index/carousel/img4.png);
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                .slide5{
+                    background-image: url(../../img/index/carousel/img5.jpeg);
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                .slide2, .slide3, .slide4, .slide5{
+                    display: none;
+                }
+        }
+    }
+
+    .controls{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        left: 0;
+        top: 0;
+
+            .prevContainer{
+                width: 12.5%;
+                height: 100%;
+
+                @include flexStructureRow;
+
+                    svg{
+                        width: 25px;
+                        height: 25px;
+
+                        cursor:pointer;
+                    }
+            }
+
+            .nextContainer{
+                @extend .prevContainer;
+            }
+
+
+    }
+
+    .buttonsContainer{
+        width: 100%;
+        height: 7%;
+        
+        display: flex;
+
+        align-items: center;
+
+            .circlesContainer{
+                width: 90%;
+                height: 100%;
+
+                padding-left: 10%;
+                @include flexStructureRow;
+                
+                    .circle{
+                        width: 8px;
+                        height: 8px;
+        
+                        margin: 0 5px 0 5px;
+                        background-color: rgb(202, 202, 202);
+        
+                        border-radius: 50%;
+        
+                        cursor: pointer;
+                    }
+            }
+
+            .playAndPauseContainer{
+                width: 10%;
+                height: 100%;
+
+                padding-right: 30px;
+                
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+
+                    .bi{
+                        font-size: 20px;
+
+                        cursor: pointer;
+                    }
+            }
+    }
+}
+
+
+
+@media screen and (min-width: 735px){
+    
+    .index__section-promotional4{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 90vh);
+        grid-template-areas: 
+        "article-1 article-2"
+        "article-3 article-4"
+        "article-5 article-6";
+
+        justify-items: center;
+        align-items: flex-end;
+        article{
+            width: 96.5%;
+        }
+
+        .article-1{
+            grid-area: article-1;
+        }
+
+        .article-2{
+            grid-area: article-2;
+        }
+
+        .article-3{
+            grid-area: article-3;
+        }
+
+        .article-4{
+            grid-area: article-4;
+        }
+
+        .article-5{
+            grid-area: article-5;
+        }
+
+        .article-6{
+            grid-area: article-6;
+        }
+    }
+
+    .carouselContainer{
+
+        .carousel{
+            .slide-track{
+                    .slide{
+                        .textContainer{
+                            grid-template-columns: 80% 20%;
+                            grid-template-rows: 1fr;
+                            grid-template-areas: 
+                            "descriptionContainer appleTV";
+
+                            .descriptionContainer{
+                                width: 100%;
+                                padding-left: 50px;
+
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: left;
+                                align-items: center;
+                                
+                                    .type{
+                                        order: 1;
+
+                                        margin-right: 10px;
+                                    }
+                                    .description{
+                                        order: 2;
+
+                                        margin-bottom: 0px;
+                                    }
+                                    .button{
+                                        order: 0;
+
+                                        margin-right: 40px;
+                                    }
+                            }
+
+                            .appleTV{
+                                align-self: flex-end;
+                            }
+                        }
+                    }
+            }
+
+
+        }
+
+    }
+}

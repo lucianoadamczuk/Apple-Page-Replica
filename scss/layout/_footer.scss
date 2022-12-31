@@ -1,0 +1,281 @@
+footer{
+    width: 100%;
+    height: auto;
+
+    padding: 15px;
+    background-color: whitesmoke;
+
+        .footerTextContainer{
+            width: 100%;
+            height: 35vh;
+            
+            border-bottom: 1px solid rgb(190, 190, 190);
+            padding-bottom: 30px;
+                p{
+                    font-size: 14px;
+                    color: rgb(136, 136, 136);
+                }
+        }
+
+        .servicesContainer{
+            width: 100%;
+            height: 60vh;
+
+            
+
+            .elementsContainer{
+                width: 100%;
+                height: 40px;
+                
+                padding-right: 10px;
+                
+                display: flex;
+                align-items: center;
+                
+                border-bottom: 1px solid rgb(190, 190, 190);
+
+                    .elements{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        
+                            p{
+                                font-size: 14px;
+                                color: rgb(136, 136, 136);
+                            }
+                    }
+            }
+
+            .container__menu{
+                display: none;
+            }
+        }
+
+        .bottom{
+            width: 100%;
+            height: 25vh;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 30% 30% 40%;
+            grid-template-areas:
+            "textContainer"
+            "country"
+            "legalsContainer";
+            justify-content: center;
+            align-items: center;
+
+
+                .textContainer{
+                    grid-area: textContainer;
+                    height: 100%;
+                    
+                    display: flex;
+                    align-items: center;
+                    
+                        p{
+                            font-size: 14px;
+                            color: rgb(136, 136, 136);
+                        }
+
+                        a{
+                            font-size: 14px;
+                        }
+                }
+
+                .legalsContainer{
+                    grid-area: legalsContainer;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    
+                        .copyrightContainer{
+                            width: 100%;
+                            height: 30%;
+
+                                p{
+                                    font-size: 14px;
+                                    color: rgb(136, 136, 136);
+                                }
+                        }
+
+                        .linksContainer{
+                            width: 100%;
+                            height: 70%;
+
+                            a{
+                                width: 70px;
+                                height: auto;
+    
+                                padding: 0 10px 0 10px;
+                                
+                                border-right: 1px solid rgb(196, 196, 196);
+    
+                                color: rgb(94, 94, 94);
+                            }
+    
+                            .SS{
+                                padding-left: 0;
+                            }
+                        }
+
+
+                }
+
+                .country{
+                    grid-area: country;
+
+                        p{
+                            color: rgb(94, 94, 94);
+                        }
+                }
+        }
+}
+
+@media screen and (min-width:735px){
+    footer{
+        padding: 15px 12.5% 15px 12.5%;
+
+        .footerTextContainer{
+            height: 20vh; 
+            padding-bottom: 15%;      
+        }
+
+        .servicesContainer{
+            width: 100%;
+            height: 75vh;
+
+            margin: 20px 0 20px 0;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: auto auto auto auto;
+            grid-template-areas: 
+            "elementsContainer-1 elementsContainer-2 elementsContainer-4 elementsContainer-5 elementsContainer-9"
+            "elementsContainer-1 elementsContainer-2 elementsContainer-4 elementsContainer-6 elementsContainer-9"
+            "elementsContainer-1 elementsContainer-2 elementsContainer-4 elementsContainer-7 elementsContainer-10"
+            "elementsContainer-1 elementsContainer-3 elementsContainer-4 elementsContainer-8 elementsContainer-10"
+            "elementsContainer-1 elementsContainer-3 elementsContainer-4 elementsContainer-8 elementsContainer-10";
+
+            .elementsContainer{
+                height: 100%;
+
+                padding-right: 0px;
+                
+                display: block;
+                
+                border-bottom: none;
+
+                    .elements{
+                        width: auto;
+
+                        height: auto;
+                        margin-bottom: 10px;
+
+                        display: flex;
+                        
+                            p{
+                                font-size: 14px;
+                                color: rgb(0, 0, 0);
+                                font-weight: bold;
+                            }
+
+                            .sumSign{
+                                display: none;
+                            }
+                    }
+            }
+
+            .elementsContainer-1{
+                grid-area: elementsContainer-1;
+            }
+            .elementsContainer-2{
+                grid-area: elementsContainer-2;
+            }
+            .elementsContainer-3{
+                grid-area: elementsContainer-3;
+            }
+            .elementsContainer-4{
+                grid-area: elementsContainer-4;
+            }
+            .elementsContainer-5{
+                grid-area: elementsContainer-5;
+            }
+            .elementsContainer-6{
+                grid-area: elementsContainer-6;
+            }
+            .elementsContainer-7{
+                grid-area: elementsContainer-7;
+            }
+            .elementsContainer-8{
+                grid-area: elementsContainer-8;
+            }
+            .elementsContainer-9{
+                grid-area: elementsContainer-9;
+            }
+            .elementsContainer-10{
+                grid-area: elementsContainer-10;
+            }
+
+            .container__menu{
+                height: auto;
+
+                display: flex;
+                flex-direction: column;
+
+                    a{
+                        margin-bottom: 10px;
+                    }
+            }
+        }
+
+        .bottom{
+            width: 100%;
+            height: 10vh;
+            display: grid;
+            grid-template-columns: 90% 10%;
+            grid-template-rows: 40% 60%;
+            grid-template-areas:
+            "textContainer textContainer"
+            "legalsContainer country";
+
+            justify-content: center;
+            align-items: center;
+
+
+                .textContainer{
+                    grid-area: textContainer;
+                    height: 100%;
+                    
+                    display: flex;
+                    align-items: center;
+                    
+                    border-bottom: 1px solid rgb(190, 190, 190);
+                }
+
+                .legalsContainer{
+                    flex-direction: row;
+                    align-items: center;
+
+                        .copyrightContainer{
+                            width: auto;
+                            height: auto;
+                        }
+
+                        .linksContainer{
+                            width: auto;
+                            height: auto;
+
+    
+                            .SS{
+                                margin-left: 20px;
+                            }
+                        }
+                }
+
+                .country{
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                }
+        }
+    }
+}
