@@ -8,6 +8,10 @@ a {
   text-decoration: none;
 }
 
+body {
+  min-width: 340px;
+}
+
 @font-face {
   font-family: SFPRODISPLAYREGULAR;
   src: url(../fonts/SFPRODISPLAYREGULAR.OTF);
@@ -28,9 +32,11 @@ a {
 
 nav {
   width: 100%;
-  height: 40px;
+  height: 45px;
   padding: 0 15px 0 15px;
-  background-color: #2c2c30;
+  background-color: rgba(15, 15, 15, 0.8431372549);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -39,7 +45,7 @@ nav {
 }
 nav .bi-apple, nav .bi-list, nav .bi-search, nav .bi-bag {
   font-size: 14px;
-  color: rgb(190, 190, 190);
+  color: rgb(182, 182, 182);
   cursor: pointer;
 }
 nav .menu, nav .bi-search {
@@ -58,8 +64,8 @@ nav .menu, nav .bi-search {
   }
   nav .menu a {
     margin: 0 20px 0 20px;
-    font-size: 12px;
-    color: rgb(190, 190, 190);
+    font-size: 14px;
+    color: rgb(182, 182, 182);
     text-decoration: none;
   }
   nav .bi-search {
@@ -82,7 +88,8 @@ footer {
 }
 footer .footerTextContainer {
   width: 100%;
-  height: 35vh;
+  min-height: 35vh;
+  height: auto;
   border-bottom: 1px solid rgb(190, 190, 190);
   padding-bottom: 30px;
 }
@@ -116,17 +123,19 @@ footer .servicesContainer .container__menu {
 }
 footer .bottom {
   width: 100%;
-  height: 25vh;
+  min-height: 25vh;
+  height: auto;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 30% 30% 40%;
+  grid-template-rows: 40% 20% 40%;
   grid-template-areas: "textContainer" "country" "legalsContainer";
   justify-content: center;
   align-items: center;
 }
 footer .bottom .textContainer {
   grid-area: textContainer;
-  height: 100%;
+  min-height: 100%;
+  height: auto;
   display: flex;
   align-items: center;
 }
@@ -139,7 +148,8 @@ footer .bottom .textContainer a {
 }
 footer .bottom .legalsContainer {
   grid-area: legalsContainer;
-  height: 100%;
+  min-height: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
 }
@@ -177,13 +187,15 @@ footer .bottom .country p {
     padding: 15px 12.5% 15px 12.5%;
   }
   footer .footerTextContainer {
-    height: 20vh;
+    min-height: 20vh;
+    height: auto;
     padding-bottom: 15%;
   }
   footer .servicesContainer {
     width: 100%;
-    height: 75vh;
-    margin: 20px 0 20px 0;
+    min-height: 75vh;
+    height: auto;
+    margin-top: 2%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto auto auto auto;
@@ -249,7 +261,8 @@ footer .bottom .country p {
   }
   footer .bottom {
     width: 100%;
-    height: 10vh;
+    min-height: 10vh;
+    height: auto;
     display: grid;
     grid-template-columns: 90% 10%;
     grid-template-rows: 40% 60%;
@@ -259,7 +272,7 @@ footer .bottom .country p {
   }
   footer .bottom .textContainer {
     grid-area: textContainer;
-    height: 100%;
+    height: auto;
     display: flex;
     align-items: center;
     border-bottom: 1px solid rgb(190, 190, 190);
@@ -288,6 +301,7 @@ footer .bottom .country p {
 .index__section-promotional1 {
   width: 100%;
   min-height: 80vh;
+  height: auto;
   padding-top: 40px;
   display: flex;
   flex-direction: column;
@@ -296,7 +310,8 @@ footer .bottom .country p {
 }
 .index__section-promotional1 .textContainer {
   width: 100%;
-  height: 30vh;
+  min-height: 30vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -309,35 +324,44 @@ footer .bottom .country p {
   margin-bottom: 20px;
   font-size: 30px;
 }
-.index__section-promotional1 .link {
+.index__section-promotional1 .linksContainer {
+  width: 100%;
+  min-height: auto;
+  text-align: center;
+}
+.index__section-promotional1 .linksContainer .link {
   font-size: 20px;
   margin-right: 20px;
 }
 .index__section-promotional1 .imgContainer {
   width: 100%;
-  height: 60vh;
+  min-height: 60vh;
   padding-bottom: 10px;
   margin-bottom: 10px;
-  background-image: url(../../img/index/iphone14.png);
+  background-image: url(../scss/img/index/iPhone14.png);
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
 }
 
 .index__section-promotional2 {
   width: 100%;
   min-height: 80vh;
+  height: auto;
   background-color: #0b002b;
 }
 .index__section-promotional2 .imgContainer {
   width: 100%;
-  height: 60vh;
-  background-image: url(../../img/index/appleGift.png);
+  min-height: 60vh;
+  background-image: url(../scss/img/index/appleGift.png);
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 .index__section-promotional2 .textContainer {
   width: 100%;
-  height: 30vh;
+  min-height: 30vh;
+  height: auto;
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -358,15 +382,12 @@ footer .bottom .country p {
 .index__section-promotional2 .link {
   font-size: 20px;
 }
-.index__section-promotional2 .break {
-  width: 100%;
-  height: 10px;
-  background-color: white;
-}
 
 .index__section-promotional3 {
   width: 100%;
   min-height: 85vh;
+  height: auto;
+  margin-top: 10px;
   background-color: #0f0f0f;
 }
 .index__section-promotional3 .textContainer {
@@ -376,6 +397,7 @@ footer .bottom .country p {
   flex-direction: column;
   justify-content: end;
   align-items: center;
+  text-align: center;
 }
 .index__section-promotional3 .textContainer .title {
   display: flex;
@@ -406,15 +428,22 @@ footer .bottom .country p {
 .index__section-promotional3 .imgContainer {
   width: 100%;
   height: 50vh;
-  background-image: url(../../img/index/appleWatch.png);
+  margin-top: 30px;
+  background-image: url(../scss/img/index/appleWatch.png);
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
-  background-size: 400px 90%;
+  background-size: contain;
 }
 
-.index__section-promotional4 article {
+.index__section-promotional4 {
   width: 100%;
   min-height: auto;
+  margin-top: 10px;
+}
+.index__section-promotional4 article {
+  width: 100%;
+  min-height: 85vh;
   position: relative;
 }
 .index__section-promotional4 article .textContainer {
@@ -443,15 +472,16 @@ footer .bottom .country p {
 }
 .index__section-promotional4 article .imgContainer {
   width: 100%;
-  height: 58vh;
+  height: 55vh;
 }
 .index__section-promotional4 .article-1 {
   background-color: #0f0f0f;
 }
 .index__section-promotional4 .article-1 .imgContainer {
-  background-image: url(../../img/index/iPhonePro.png);
+  background-image: url(../scss/img/index/iPhonePro.png);
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   background-size: contain;
 }
 .index__section-promotional4 .article-2 {
@@ -461,9 +491,10 @@ footer .bottom .country p {
   color: black;
 }
 .index__section-promotional4 .article-2 .imgContainer {
-  background-image: url(../../img/index/iPad.png);
+  background-image: url(../scss/img/index/iPad.png);
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   background-size: contain;
 }
 .index__section-promotional4 .article-3 {
@@ -479,17 +510,21 @@ footer .bottom .country p {
   color: rgb(255, 115, 0);
 }
 .index__section-promotional4 .article-3 .imgContainer {
-  background-image: url(../../img/index/watchUltra.png);
+  background-image: url(../scss/img/index/watchUltra.png);
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
+  background-size: contain;
 }
 .index__section-promotional4 .article-4 {
   background-color: #0f0f0f;
 }
 .index__section-promotional4 .article-4 .imgContainer {
-  background-image: url(../../img/index/airPodsPro.png);
+  background-image: url(../scss/img/index/airPodsPro.png);
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
+  background-size: contain;
 }
 .index__section-promotional4 .article-5 .textContainer .title, .index__section-promotional4 .article-5 .textContainer .paragraph {
   color: black;
@@ -510,9 +545,11 @@ footer .bottom .country p {
   margin-left: 5px;
 }
 .index__section-promotional4 .article-5 .imgContainer {
-  background-image: url(../../img/index/macBookAir.png);
+  background-image: url(../scss/img/index/macBookAir.png);
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
+  background-size: contain;
 }
 .index__section-promotional4 .article-6 {
   background-color: white;
@@ -521,9 +558,11 @@ footer .bottom .country p {
   color: black;
 }
 .index__section-promotional4 .article-6 .imgContainer {
-  background-image: url(../../img/index/appleCard.png);
+  background-image: url(../scss/img/index/appleCard.png);
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
+  background-size: contain;
 }
 
 .carouselContainer {
@@ -637,27 +676,27 @@ footer .bottom .country p {
   background: linear-gradient(rgba(255, 255, 255, 0) 40%, rgb(0, 0, 0) 100%);
 }
 .carouselContainer .carousel .slide-track .slide1 {
-  background-image: url(../../img/index/carousel/img1.jpg);
+  background-image: url(../scss/img/index/carousel/img1.jpg);
   background-size: cover;
   background-position: center;
 }
 .carouselContainer .carousel .slide-track .slide2 {
-  background-image: url(../../img/index/carousel/img2.jpg);
+  background-image: url(../scss/img/index/carousel/img2.jpg);
   background-size: cover;
   background-position: center;
 }
 .carouselContainer .carousel .slide-track .slide3 {
-  background-image: url(../../img/index/carousel/img3.jpg);
+  background-image: url(../scss/img/index/carousel/img3.jpg);
   background-size: cover;
   background-position: center;
 }
 .carouselContainer .carousel .slide-track .slide4 {
-  background-image: url(../../img/index/carousel/img4.png);
+  background-image: url(../scss/img/index/carousel/img4.png);
   background-size: cover;
   background-position: center;
 }
 .carouselContainer .carousel .slide-track .slide5 {
-  background-image: url(../../img/index/carousel/img5.jpeg);
+  background-image: url(../scss/img/index/carousel/img5.jpeg);
   background-size: cover;
   background-position: center;
 }
@@ -724,6 +763,7 @@ footer .bottom .country p {
 
 @media screen and (min-width: 735px) {
   .index__section-promotional4 {
+    margin-top: 0px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 90vh);
@@ -732,7 +772,7 @@ footer .bottom .country p {
     align-items: flex-end;
   }
   .index__section-promotional4 article {
-    width: 96.5%;
+    width: 90%;
   }
   .index__section-promotional4 .article-1 {
     grid-area: article-1;

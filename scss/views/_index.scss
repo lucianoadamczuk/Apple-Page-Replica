@@ -1,14 +1,15 @@
-
 .index__section-promotional1{
 width: 100%;
 min-height: 80vh;
+height: auto;
 
 padding-top: 40px;
 @include flexStructureColumn;
 
 .textContainer{
     width: 100%;
-    height: 30vh;
+    min-height: 30vh;
+    height: auto;
 
     @include flexStructureColumn;
 
@@ -23,18 +24,24 @@ padding-top: 40px;
 
 }
 
-    .link{
-        font-size: 20px;
-        margin-right: 20px;
+    .linksContainer{
+        width: 100%;
+        min-height: auto;
+        text-align: center;
+        .link{
+            font-size: 20px;
+            margin-right: 20px;
+            
+        }
     }
+
     .imgContainer{
         width: 100%;
-        height: 60vh;
+        min-height: 60vh;
         padding-bottom: 10px;
         margin-bottom: 10px;
-        background-image: url(../../img/index/iphone14.png);
-        background-repeat: no-repeat;
-        background-position: center;
+
+        @include background__index__section-promotional1;
     }
     
 }
@@ -42,23 +49,22 @@ padding-top: 40px;
 .index__section-promotional2{
     width: 100%;
     min-height: 80vh;
-
+    height: auto;
     background-color:  #0b002b;
 
         .imgContainer{
             width: 100%;
-            height: 60vh;
+            min-height: 60vh;
 
-            background-image: url(../../img/index/appleGift.png);
-            background-repeat: no-repeat;
-            background-position: center;
+            @include background__index__section-promotional2;
         }
 
 
         .textContainer{
             width: 100%;
-            height: 30vh;
-            
+            min-height: 30vh;
+            height: auto;
+
             padding-bottom: 20px;
 
             @include flexStructureColumn;
@@ -83,16 +89,14 @@ padding-top: 40px;
             font-size: 20px;
         }
 
-        .break{
-            width: 100%;
-            height: 10px;
-            background-color: white;
-        }
 }
 
 .index__section-promotional3{
     width: 100%;
     min-height: 85vh;
+    height: auto;
+
+    margin-top: 10px;
 
     background-color: #0f0f0f;
 
@@ -104,7 +108,7 @@ padding-top: 40px;
             flex-direction: column;
             justify-content: end;
             align-items: center;
-
+            text-align: center;
                 .title{
                     @include flexStructureRow;
 
@@ -139,21 +143,20 @@ padding-top: 40px;
             width: 100%;
             height: 50vh;
 
-            background-image: url(../../img/index/appleWatch.png);
-            background-repeat: no-repeat;
-            background-position:bottom ;
-            background-size: 400px 90%;
+            margin-top: 30px;
+            
+            @include background__index__section-promotional3;
         }
 }
 
-
-
 .index__section-promotional4{
-
+    width: 100%;
+    min-height: auto;
+    margin-top: 10px;
 
     article{
         width: 100%;
-        min-height: auto;
+        min-height: 85vh;
 
         position: relative;
 
@@ -186,7 +189,7 @@ padding-top: 40px;
 
         .imgContainer{
             width: 100%;
-            height: 58vh;
+            height: 55vh;
         }
     }
 
@@ -194,10 +197,7 @@ padding-top: 40px;
         background-color: #0f0f0f;
 
         .imgContainer{
-            background-image: url(../../img/index/iPhonePro.png);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: contain;
+            @include background__index__section-promotional4__article-1
         }
     }
 
@@ -211,10 +211,7 @@ padding-top: 40px;
             }
 
             .imgContainer{
-                background-image: url(../../img/index/iPad.png);
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: contain;
+                @include background__index__section-promotional4__article-2
             }
     }
 
@@ -236,9 +233,7 @@ padding-top: 40px;
 
             .imgContainer{
                 
-                background-image: url(../../img/index/watchUltra.png);
-                background-repeat: no-repeat;
-                background-position: center;
+                @include background__index__section-promotional4__article-3
         }
 
     }
@@ -247,10 +242,7 @@ padding-top: 40px;
         background-color: #0f0f0f;
 
         .imgContainer{
-            
-            background-image: url(../../img/index/airPodsPro.png);
-            background-repeat: no-repeat;
-            background-position: center;
+            @include background__index__section-promotional4__article-4
         }
     }
 
@@ -278,9 +270,7 @@ padding-top: 40px;
         }
 
         .imgContainer{
-            background-image: url(../../img/index/macBookAir.png);
-            background-repeat: no-repeat;
-            background-position: center;
+            @include background__index__section-promotional4__article-5
         }
     }
 
@@ -294,9 +284,7 @@ padding-top: 40px;
         }
 
         .imgContainer{
-            background-image: url(../../img/index/appleCard.png);
-            background-repeat: no-repeat;
-            background-position: center;
+            @include background__index__section-promotional4__article-6
         }
     }
 }
@@ -447,33 +435,23 @@ padding-top: 40px;
                 }
 
                 .slide1{
-                    background-image: url(../../img/index/carousel/img1.jpg);
-                    background-size: cover;
-                    background-position: center;
+                    @include background__carousel-slide1;
                 }
 
                 .slide2{
-                    background-image: url(../../img/index/carousel/img2.jpg);
-                    background-size: cover;
-                    background-position: center;
+                    @include background__carousel-slide2;
                 }
 
                 .slide3{
-                    background-image: url(../../img/index/carousel/img3.jpg);
-                    background-size: cover;
-                    background-position: center;
+                    @include background__carousel-slide3;
                 }
 
                 .slide4{
-                    background-image: url(../../img/index/carousel/img4.png);
-                    background-size: cover;
-                    background-position: center;
+                    @include background__carousel-slide4;
                 }
 
                 .slide5{
-                    background-image: url(../../img/index/carousel/img5.jpeg);
-                    background-size: cover;
-                    background-position: center;
+                    @include background__carousel-slide5;
                 }
 
                 .slide2, .slide3, .slide4, .slide5{
@@ -562,8 +540,10 @@ padding-top: 40px;
 
 
 @media screen and (min-width: 735px){
-    
+
     .index__section-promotional4{
+        margin-top: 0px;
+
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(3, 90vh);
@@ -574,8 +554,9 @@ padding-top: 40px;
 
         justify-items: center;
         align-items: flex-end;
+
         article{
-            width: 96.5%;
+            width: 90%;
         }
 
         .article-1{

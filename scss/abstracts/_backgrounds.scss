@@ -1,0 +1,111 @@
+// index
+@mixin background__index__section-promotional1{
+
+    background-image: url(../scss/img/index/iPhone14.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+@mixin background__index__section-promotional2{
+
+    background-image: url(../scss/img/index/appleGift.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@mixin background__index__section-promotional3{
+
+    background-image: url(../scss/img/index/appleWatch.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:bottom ;
+    background-size: contain ;
+}
+
+@mixin background__index__section-promotional4__article-1{
+
+    background-image: url(../scss/img/index/iPhonePro.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:bottom ;
+    background-size: contain ;
+}
+
+@mixin background__index__section-promotional4__article-2{
+
+    background-image: url(../scss/img/index/iPad.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:bottom ;
+    background-size: contain ;
+}
+
+@mixin background__index__section-promotional4__article-3{
+
+    background-image: url(../scss/img/index/watchUltra.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:bottom ;
+    background-size: contain ;
+}
+
+@mixin background__index__section-promotional4__article-4{
+
+    background-image: url(../scss/img/index/airPodsPro.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:bottom ;
+    background-size: contain ;
+}
+
+@mixin background__index__section-promotional4__article-5{
+
+    background-image: url(../scss/img/index/macBookAir.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:bottom ;
+    background-size: contain ;
+}
+
+@mixin background__index__section-promotional4__article-6{
+
+    background-image: url(../scss/img/index/appleCard.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:bottom ;
+    background-size: contain ;
+}
+
+@mixin background__carousel-slide1{
+    background-image: url(../scss/img/index/carousel/img1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin background__carousel-slide2{
+    background-image: url(../scss/img/index/carousel/img2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin background__carousel-slide3{
+    background-image: url(../scss/img/index/carousel/img3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin background__carousel-slide4{
+    background-image: url(../scss/img/index/carousel/img4.png);
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin background__carousel-slide5{
+    background-image: url(../scss/img/index/carousel/img5.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+
