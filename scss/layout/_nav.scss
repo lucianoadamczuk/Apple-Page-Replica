@@ -13,6 +13,63 @@ nav{
 
     z-index: 5;
 
+        .hamburguerMenu{
+            width: 40px;
+            height: 100%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+                .stick{
+                    width: 18px;
+                    height: 1px;
+
+                    background-color:rgb(182, 182, 182);
+                }
+
+                .stick-1{
+                    margin-bottom: 5px;
+                }
+        }
+
+        // THIS ONE RUNS IN JS
+        .hambuergerMenu__stick1-addAnimation{
+            margin-bottom: 0px !important;
+
+            animation-name: stick1-addAnimation;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            @keyframes stick1-addAnimation {
+                0%{
+
+                }
+                100%{
+                    transform: rotate(45deg);
+                    transform-origin: center;
+                    position: fixed;
+                }
+            }
+        }
+
+        .hambuergerMenu__stick2-addAnimation{
+            animation-name: stick2-addAnimation;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            @keyframes stick2-addAnimation{
+                from{
+
+                }
+
+                100%{
+                    transform: rotate(-45deg);
+                    transform-origin: center;
+                    
+                    
+                }
+            }
+        }
         
         .bi-apple, .bi-list, .bi-search, .bi-bag{
             font-size: 14px;
@@ -22,22 +79,140 @@ nav{
 
         .menu, .bi-search{
             display: none;
+            
+        }
+
+        // THIS ONE RUNS IN JS
+        .navMenuAddAnimation{
+            width: 100%;
+            background-color: black;
+
+            position: fixed;
+            top: 40px;
+            left: 0;
+            
+            display: flex;
+            flex-direction: column;
+            
+            z-index: 3;
+
+            animation-name: navAddAnimation;
+            animation-duration: 0.3s;
+            animation-fill-mode: forwards;
+        
+            @keyframes navAddAnimation{
+                from{
+                    height: 0;
+                }
+        
+                to{
+                    height: 100vh;
+                }
+            }
+
+                .inputContainer{
+                    width: 100%;
+                    height: 10vh;
+                    padding: 0 8% 0 8%;
+
+                    display: flex;
+                    align-items: center;
+
+                    border-bottom: 1px solid rgb(190, 190, 190);
+
+                        .bi-search{
+                            width: 8%;
+                            height: 50%;
+                            background-color: rgb(32, 32, 32);
+
+                            @include flexStructureRow;
+                            
+                            border-radius: 10px 0 0 10px;
+                        }
+
+                        input{
+                            width: 92%;
+                            height: 50%;
+
+                            padding-left: 5px;
+                            background-color: rgb(32, 32, 32);
+
+                            font-size: 18px;
+                            color: rgb(182, 182, 182);
+
+                            border: 0px;
+                            border-radius: 0 10px 10px 0;
+                        }
+
+                }
+
+                .linksContainer{
+                    width: 100%;
+                    height: 90vh;
+
+                    margin-top: 1%;
+                    padding: 0 8% 0 8%;
+
+                    display: flex;
+                    flex-direction: column;
+                    
+
+                        a{
+                            width: auto;
+                            height: 7%;
+
+                            margin: 1% 0 1% 0;
+
+                            display: flex;
+                            align-items: center;
+
+                            font-size: 18px;
+                            color: rgb(182, 182, 182);
+                            text-decoration: none;
+                            
+                            border-bottom: 1px solid rgb(190, 190, 190);
+                        }
+                }
+
         }
 }
 
-@media screen and (min-width: 735px){
+.navToggle{
+    background-color: black;
+}
+
+@media screen and (min-width: 835px){
     nav{
         justify-content: center;
         .bi-list{
             display: none;
         }
+        .hamburguerMenu{
+            display: none;
+        }
+
+        .bi-apple{
+            font-size: 18px;
+        }
         .menu{
+            width: 70%;
             display: flex;
+            justify-content: center;
+
+            .linksContainer{
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
                 a{
-                    margin: 0 20px 0 20px;
-                    font-size: 14px;
+                    font-size: 12px;
                     color: rgb(182, 182, 182);
                     text-decoration: none;
+                }
+
+                .inputContainer{
+                    display: none;
                 }
         }
 

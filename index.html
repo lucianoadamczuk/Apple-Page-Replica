@@ -4,28 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=nav, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/pageIcon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="shortcut icon" href="./img/index/pageIcon.png" type="image/x-icon">
     <title>Apple</title>
 </head>
 <body>
 
     <!-- nav -->
-    <nav>
-        <i class="bi bi-list"></i>
+    <nav id="nav">
+        <div class="hamburguerMenu" id="hamburguerMenu">
+            <div class="stick stick-1" id="stick1"></div>
+            <div class="stick stick-2" id="stick2"></div>
+        </div>
         <i class="bi bi-apple"></i>
-        <div class="menu">
-            <a href="">Store</a>
-            <a href="">Mac</a>
-            <a href="">iPad</a>
-            <a href="">iPhone</a>
-            <a href="">Watch</a>
-            <a href="">AirPods</a>
-            <a href="">TV & Home</a>
-            <a href="">Only on Apple</a>
-            <a href="">Accessories</a>
-            <a href="">Support</a>
+        <div class="menu" id="navMenu">
+            <div class="inputContainer">
+                <i class="bi bi-search"></i>
+                <input type="text" placeholder="Search Apple.com">
+            </div>
+            <div class="linksContainer">
+                <a href="">Store</a>
+                <a href="">Mac</a>
+                <a href="">iPad</a>
+                <a href="">iPhone</a>
+                <a href="">Watch</a>
+                <a href="">AirPods</a>
+                <a href="">TV & Home</a>
+                <a href="">Only on Apple</a>
+                <a href="">Accessories</a>
+                <a href="">Support</a>
+            </div>
         </div>
         <i class="bi bi-search"></i>
         <i class="bi bi-bag"></i>
@@ -683,5 +692,7 @@
             <div class="country"><p>United States</p></div>
         </div>
     </footer>
+    <script src="./javascript/script-nav.js"></script>
+    <script src="./javascript/script-footer.js"></script>
 </body>
 </html>
