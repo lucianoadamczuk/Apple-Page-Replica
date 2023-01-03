@@ -331,7 +331,7 @@
 
             <div class="carousel">
 
-                <div class="slide-track">
+                <div class="slidetrack" id="slidetrack">
                     
                     <div class="slide slide1">
                         <div class="textContainer">
@@ -469,31 +469,24 @@
                 </div>
 
                 <div class="controls">
-                    <div class="prevContainer">
-                        <svg id="prevButton" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
-                        </svg>
-                    </div>
+                    <div class="prevButton" id="prevButton"></div>
                 
-                    <div class="nextContainer">
-                        <svg id="nextButton" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                        </svg>
-                    </div>
+                    <div class="nextButton" id="nextButton"></div>
                 </div>
             </div>
 
             <div class="buttonsContainer">
                 <div class="circlesContainer">
-                    <div class="circle circleForSlide1"></div>
-                    <div class="circle circleForSlide2"></div>
-                    <div class="circle circleForSlide3"></div>
-                    <div class="circle circleForSlide4"></div>
-                    <div class="circle circleForSlide5"></div>
+                    <div class="circle" id="circleForSlide1"></div>
+                    <div class="circle" id="circleForSlide2"></div>
+                    <div class="circle" id="circleForSlide3"></div>
+                    <div class="circle" id="circleForSlide4"></div>
+                    <div class="circle" id="circleForSlide5"></div>
                 </div>
 
                 <div class="playAndPauseContainer">
-                    <i class="bi bi-play-circle"></i>
+                    <i class="bi bi-play-circle" id="btnPlay"></i>
+                    <i class="bi bi-pause-circle" id="btnPause"></i>
                 </div>
             </div>
         </section>
@@ -692,7 +685,8 @@
             <div class="country"><p>United States</p></div>
         </div>
     </footer>
-    <script src="./javascript/script-nav.js"></script>
-    <script src="./javascript/script-footer.js"></script>
+    <script src="./javascript/nav.js"></script>
+    <script src="./javascript/indexCarousel.js"></script>
+    <script src="./javascript/footer.js"></script>
 </body>
 </html>

@@ -302,23 +302,25 @@ padding-top: 40px;
     
     .carousel{
         width: 100%;
-        height: 93%;
+        height: 95%;
         
         display: flex;
         flex-direction: row;
-        justify-content: left;
-        align-items: center;
+        justify-content: center;
+        
 
         position: relative;
+        overflow: hidden;
 
-        .slide-track{
-            width: calc(75vw * 5) + (10 * 5);
+        .slidetrack{
+            width: calc((75vw + 10px) * 5);
             height: 100%;
             
             display: flex;
             justify-content: center;
             align-items: center;
-
+            
+            
                 .slide{
                     width: 75vw;
                     height: 100%;
@@ -456,9 +458,6 @@ padding-top: 40px;
                     @include background__carousel-slide5;
                 }
 
-                .slide2, .slide3, .slide4, .slide5{
-                    display: none;
-                }
         }
     }
 
@@ -471,22 +470,19 @@ padding-top: 40px;
         left: 0;
         top: 0;
 
-            .prevContainer{
+            .prevButton{
                 width: 12.5%;
                 height: 100%;
 
                 @include flexStructureRow;
 
-                    svg{
-                        width: 25px;
-                        height: 25px;
-
-                        cursor:pointer;
-                    }
+                cursor:pointer;
+                z-index: 1;
+                
             }
 
-            .nextContainer{
-                @extend .prevContainer;
+            .nextButton{
+                @extend .prevButton;
             }
 
 
@@ -532,8 +528,11 @@ padding-top: 40px;
 
                     .bi{
                         font-size: 20px;
-
                         cursor: pointer;
+                    }
+
+                    .bi-pause-circle{
+                        display: none;
                     }
             }
     }
@@ -589,7 +588,7 @@ padding-top: 40px;
     .carouselContainer{
 
         .carousel{
-            .slide-track{
+            .slidetrack{
                     .slide{
                         .textContainer{
                             grid-template-columns: 80% 20%;

@@ -769,21 +769,21 @@ footer .bottom .country p {
 }
 .carouselContainer .carousel {
   width: 100%;
-  height: 93%;
+  height: 95%;
   display: flex;
   flex-direction: row;
-  justify-content: left;
-  align-items: center;
+  justify-content: center;
   position: relative;
+  overflow: hidden;
 }
-.carouselContainer .carousel .slide-track {
-  width: 425vw;
+.carouselContainer .carousel .slidetrack {
+  width: calc((75vw + 10px) * 5);
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.carouselContainer .carousel .slide-track .slide {
+.carouselContainer .carousel .slidetrack .slide {
   width: 75vw;
   height: 100%;
   margin: 0 5px 0 5px;
@@ -791,7 +791,7 @@ footer .bottom .country p {
   align-items: flex-end;
   position: relative;
 }
-.carouselContainer .carousel .slide-track .slide .textContainer {
+.carouselContainer .carousel .slidetrack .slide .textContainer {
   width: 100%;
   height: 100%;
   padding-bottom: 30px;
@@ -804,38 +804,38 @@ footer .bottom .country p {
   left: 0;
   z-index: 1;
 }
-.carouselContainer .carousel .slide-track .slide .textContainer .appleTV {
+.carouselContainer .carousel .slidetrack .slide .textContainer .appleTV {
   grid-area: appleTV;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.carouselContainer .carousel .slide-track .slide .textContainer .appleTV .bi, .carouselContainer .carousel .slide-track .slide .textContainer .appleTV p {
+.carouselContainer .carousel .slidetrack .slide .textContainer .appleTV .bi, .carouselContainer .carousel .slidetrack .slide .textContainer .appleTV p {
   font-size: 30px;
   color: white;
 }
-.carouselContainer .carousel .slide-track .slide .textContainer .descriptionContainer {
+.carouselContainer .carousel .slidetrack .slide .textContainer .descriptionContainer {
   grid-area: descriptionContainer;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
 }
-.carouselContainer .carousel .slide-track .slide .textContainer .descriptionContainer .type {
+.carouselContainer .carousel .slidetrack .slide .textContainer .descriptionContainer .type {
   margin-bottom: 5px;
   font-size: 20px;
   font-weight: bolder;
   color: white;
   text-align: center;
 }
-.carouselContainer .carousel .slide-track .slide .textContainer .descriptionContainer .description {
+.carouselContainer .carousel .slidetrack .slide .textContainer .descriptionContainer .description {
   margin-bottom: 0px;
   font-size: 15px;
   color: white;
   text-align: center;
   margin-bottom: 20px;
 }
-.carouselContainer .carousel .slide-track .slide .textContainer .descriptionContainer .button {
+.carouselContainer .carousel .slidetrack .slide .textContainer .descriptionContainer .button {
   width: 150px;
   height: 45px;
   padding: 0 10px 0 10px;
@@ -846,10 +846,10 @@ footer .bottom .country p {
   border-radius: 30px;
   cursor: pointer;
 }
-.carouselContainer .carousel .slide-track .slide .textContainer .descriptionContainer .button p {
+.carouselContainer .carousel .slidetrack .slide .textContainer .descriptionContainer .button p {
   font-weight: bold;
 }
-.carouselContainer .carousel .slide-track .slide .textContainer .descriptionContainer .button .iconContainer {
+.carouselContainer .carousel .slidetrack .slide .textContainer .descriptionContainer .button .iconContainer {
   width: 15px;
   height: 15px;
   background-color: black;
@@ -859,46 +859,43 @@ footer .bottom .country p {
   align-items: center;
   border-radius: 50%;
 }
-.carouselContainer .carousel .slide-track .slide .textContainer .descriptionContainer .button .iconContainer svg {
+.carouselContainer .carousel .slidetrack .slide .textContainer .descriptionContainer .button .iconContainer svg {
   width: 10px;
   height: 10px;
   fill: white;
 }
-.carouselContainer .carousel .slide-track .slide .textContainer .descriptionContainer .button:hover {
+.carouselContainer .carousel .slidetrack .slide .textContainer .descriptionContainer .button:hover {
   background-color: rgba(255, 255, 255, 0.9);
 }
-.carouselContainer .carousel .slide-track .slide .shadowEffect {
+.carouselContainer .carousel .slidetrack .slide .shadowEffect {
   width: 100%;
   height: 100%;
   background: linear-gradient(rgba(255, 255, 255, 0) 40%, rgb(0, 0, 0) 100%);
 }
-.carouselContainer .carousel .slide-track .slide1 {
+.carouselContainer .carousel .slidetrack .slide1 {
   background-image: url(../scss/img/index/carousel/img1.jpg);
   background-size: cover;
   background-position: center;
 }
-.carouselContainer .carousel .slide-track .slide2 {
+.carouselContainer .carousel .slidetrack .slide2 {
   background-image: url(../scss/img/index/carousel/img2.jpg);
   background-size: cover;
   background-position: center;
 }
-.carouselContainer .carousel .slide-track .slide3 {
+.carouselContainer .carousel .slidetrack .slide3 {
   background-image: url(../scss/img/index/carousel/img3.jpg);
   background-size: cover;
   background-position: center;
 }
-.carouselContainer .carousel .slide-track .slide4 {
+.carouselContainer .carousel .slidetrack .slide4 {
   background-image: url(../scss/img/index/carousel/img4.png);
   background-size: cover;
   background-position: center;
 }
-.carouselContainer .carousel .slide-track .slide5 {
+.carouselContainer .carousel .slidetrack .slide5 {
   background-image: url(../scss/img/index/carousel/img5.jpeg);
   background-size: cover;
   background-position: center;
-}
-.carouselContainer .carousel .slide-track .slide2, .carouselContainer .carousel .slide-track .slide3, .carouselContainer .carousel .slide-track .slide4, .carouselContainer .carousel .slide-track .slide5 {
-  display: none;
 }
 .carouselContainer .controls {
   width: 100%;
@@ -909,18 +906,15 @@ footer .bottom .country p {
   left: 0;
   top: 0;
 }
-.carouselContainer .controls .prevContainer, .carouselContainer .controls .nextContainer {
+.carouselContainer .controls .prevButton, .carouselContainer .controls .nextButton {
   width: 12.5%;
   height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-}
-.carouselContainer .controls .prevContainer svg, .carouselContainer .controls .nextContainer svg {
-  width: 25px;
-  height: 25px;
   cursor: pointer;
+  z-index: 1;
 }
 .carouselContainer .buttonsContainer {
   width: 100%;
@@ -957,6 +951,9 @@ footer .bottom .country p {
   font-size: 20px;
   cursor: pointer;
 }
+.carouselContainer .buttonsContainer .playAndPauseContainer .bi-pause-circle {
+  display: none;
+}
 
 @media screen and (min-width: 735px) {
   .index__section-promotional4 {
@@ -989,12 +986,12 @@ footer .bottom .country p {
   .index__section-promotional4 .article-6 {
     grid-area: article-6;
   }
-  .carouselContainer .carousel .slide-track .slide .textContainer {
+  .carouselContainer .carousel .slidetrack .slide .textContainer {
     grid-template-columns: 80% 20%;
     grid-template-rows: 1fr;
     grid-template-areas: "descriptionContainer appleTV";
   }
-  .carouselContainer .carousel .slide-track .slide .textContainer .descriptionContainer {
+  .carouselContainer .carousel .slidetrack .slide .textContainer .descriptionContainer {
     width: 100%;
     padding-left: 50px;
     display: flex;
@@ -1002,19 +999,19 @@ footer .bottom .country p {
     justify-content: left;
     align-self: flex-end;
   }
-  .carouselContainer .carousel .slide-track .slide .textContainer .descriptionContainer .type {
+  .carouselContainer .carousel .slidetrack .slide .textContainer .descriptionContainer .type {
     order: 1;
     margin-right: 10px;
   }
-  .carouselContainer .carousel .slide-track .slide .textContainer .descriptionContainer .description {
+  .carouselContainer .carousel .slidetrack .slide .textContainer .descriptionContainer .description {
     order: 2;
     margin-bottom: 0px;
   }
-  .carouselContainer .carousel .slide-track .slide .textContainer .descriptionContainer .button {
+  .carouselContainer .carousel .slidetrack .slide .textContainer .descriptionContainer .button {
     order: 0;
     margin-right: 40px;
   }
-  .carouselContainer .carousel .slide-track .slide .textContainer .appleTV {
+  .carouselContainer .carousel .slidetrack .slide .textContainer .appleTV {
     align-self: flex-end;
   }
 }/*# sourceMappingURL=style.css.map */
