@@ -91,11 +91,14 @@ footer{
             .showFooterMenu{
                 width: 100%;
                 height: auto;
-
                 padding: 2% 0 2% 3%;
-
+                
                 display: flex;
                 flex-direction: column;
+            }
+
+            .hideFooterMenu{
+                height: 0vh;
             }
         }
 

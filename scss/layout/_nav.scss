@@ -52,7 +52,25 @@ nav{
                 }
             }
         }
+        // THIS ONE RUNS IN JS
+        .hambuergerMenu__stick1-addAnimation-closer{
+            margin-bottom: 5px !important;
 
+            animation-name: stick1-addAnimation-closer;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            @keyframes stick1-addAnimation-closer {
+                0%{
+                    transform: rotate(45deg);
+                    transform-origin: center;
+                    position: fixed;
+                }
+                100%{
+                    
+                }
+            }
+        }
+        // THIS ONE RUNS IN JS
         .hambuergerMenu__stick2-addAnimation{
             animation-name: stick2-addAnimation;
             animation-duration: 0.5s;
@@ -70,7 +88,22 @@ nav{
                 }
             }
         }
-        
+        // THIS ONE RUNS IN JS
+        .hambuergerMenu__stick2-addAnimation-closer{
+            animation-name: stick2-addAnimation-closer;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            @keyframes stick2-addAnimation-closer{
+                from{
+                    transform: rotate(-45deg);
+                    transform-origin: center;
+                }
+
+                100%{
+
+                }
+            }
+        }
         .bi-apple, .bi-list, .bi-search, .bi-bag{
             font-size: 14px;
             color: rgb(182, 182, 182);
@@ -175,9 +208,40 @@ nav{
                 }
 
         }
+
+        .navMenuAddAnimation-closer{
+            width: 100%;
+            background-color: black;
+
+            position: fixed;
+            top: 40px;
+            left: 0;
+            
+            display: flex;
+            flex-direction: column;
+
+            animation-name: navAddAnimation-closer;
+            animation-duration: 0.3s;
+            animation-fill-mode: forwards;
+        
+            @keyframes navAddAnimation-closer{
+                from{
+                    height: 100vh;
+                }
+        
+                to{
+                    height: 0vh;
+                }
+            }
+
+            .inputContainer, .linksContainer{
+                display: none;
+            }
+
+        }
 }
 
-.navToggle{
+.navAnimation{
     background-color: black;
 }
 
